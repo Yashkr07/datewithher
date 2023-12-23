@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a dream?? !</title>
+    <link rel="stylesheet" href="../css/style.css">   
+</head>
+
+<body>
+
+    <div id="message">
+        <p>Am I dreaming? 😳😭</p>
+    </div>
+    <!-- <audio id="myAudio" src="background-music.mp3" loop></audio> -->
+    <span id="sure">
+        <p>are you sure?</p>
+    </span>
+    <img id="gif" src="../images/lego-propose.gif" alt="Animated GIF">
+    <button id="yesBtn" class="btn" onclick="redirectPage()">Yes</button>
+    <button id="noBtn" class="btn" onclick="moveNoButton();">No</button>
+    
+    <script>
+        function moveNoButton() {
+            var noBtn = document.getElementById('noBtn');
+            noBtn.style.transform = `translate(${Math.random() * 200}px, ${Math.random() * 200}px)`;
+        }
+        function redirectPage() {
+            // alert('Thanks for saying yes! Redirecting to a cute message page.');
+            window.location.href = '../wow/wow.html';
+        }
+    </script>
+
+
+</body>
+
+</html>

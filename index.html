@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=recia@300&f[]=switzer@300&f[]=clash-display@1&f[]=nippo@300&f[]=clash-grotesk@400&f[]=jet-brains-mono@200&f[]=poppins@201,400,200&f[]=sharpie@400,300&f[]=satoshi@500,701,401&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="prompt">
+        <p>Would you like to date me 🥹👉👈 ?</p>
+    </div>
+    <img id="gif" src="images/cat.gif" alt="Animated GIF">
+
+    <button id="yesBtn" class="btn" onclick="redirectPage()">Yes</button>
+    <button id="noBtn" class="btn" onclick="moveNoButton();">No</button>
+    
+
+
+    <script>
+        function moveNoButton() {
+            var noBtn = document.getElementById('noBtn');
+            noBtn.style.transform = `translate(${Math.random() * 200}px, ${Math.random() * 200}px)`;
+        }
+        function redirectPage() {
+            // alert('Thanks for saying yes! Redirecting to a cute message page.');
+            window.location.href = 'yes/yes.html';
+        }
+    </script>
+
+</body>
+</html>
